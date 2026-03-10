@@ -27,8 +27,6 @@ export const metadata: Metadata = {
     },
 };
 
-import PageLoader from "@/components/layout/PageLoader";
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -38,7 +36,6 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${inter.variable} ${interTight.variable} antialiased`}>
                 <SmoothScroll>
-                    <PageLoader />
                     <Navbar />
                     {children}
                     <Footer />
